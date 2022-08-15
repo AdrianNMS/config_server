@@ -1,13 +1,12 @@
+server:
+  port: 8888
+
 spring:
-  profiles:
-    active: default
+  application:
+    name: configserver
   cloud:
     config:
       enabled: true
       server:
         git:
-          default-label: main
           uri: https://github.com/AdrianNMS/config_file
-          #search-paths: data
-  application:
-    name: config-service
